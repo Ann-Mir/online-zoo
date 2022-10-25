@@ -1,7 +1,9 @@
 :root {
     --desktop-width: 1600px;
+    --desktop-wrapper: 1160px;
 
     --basic-black: #000000;
+    --basic--white: #FFFFFF;
     --ecru-white: #F7F3EC;
     --woodsmoke: #111115;
     --coral: #F9804B;
