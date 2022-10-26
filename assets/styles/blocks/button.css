@@ -19,6 +19,12 @@
   border-radius: 25px;
 }
 
+.button--small {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+
 .button:hover {
   background-color: var(--christine);
   background-image: none;

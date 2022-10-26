@@ -1,0 +1,41 @@
+.pets {
+  padding-bottom: 100px;
+  background: url("../../images/strelitzia.png") right bottom no-repeat,
+    url("../../images/palm.png") left bottom no-repeat;
+}
+
+.pets__wrapper {
+  max-width: var(--desktop-width);
+  margin: 0 auto;
+  position: relative;
+}
+
+.pets__list {
+  list-style-type: none;
+  margin: 0 auto 60px auto;
+  padding: 0;
+  max-width: var(--desktop-wrapper);
+  display: grid;
+  grid-template-columns: 366px 366px 366px;
+  gap: 30px 20px;
+}
+
+.pets__button {
+  margin: 0 auto;
+}
+.pets_nav-button, .pets_nav-button:hover, .pets_nav-button:active {
+  background-image: url("../../icons/arrow-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 410px;
+}
+
+.pets_nav-button--left {
+  transform: rotate(180deg);
+  left: 138px;
+}
+
+.pets_nav-button--right {
+  right: 140px;
+}
