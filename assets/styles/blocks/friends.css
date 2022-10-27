@@ -1,0 +1,131 @@
+.friends {
+  min-height: 1004px;
+  padding: 69px 220px 100px 220px;
+  background-image: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%),
+    linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%),
+    linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);;
+}
+
+.friends__wrapper {
+  max-width: 1160px;
+  min-height: 835px;
+  padding: 41px 58px 59px 99px;
+  margin: 0 auto;
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 25px;
+}
+
+.friends__title {
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--west-side);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.friends__slogan {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--outer-space);
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.friends__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  color: var(--outer-space);
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.friends__text--bold {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.friends__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  color: var(--outer-space);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.friends__list {
+  list-style-type: none;
+  margin: 0 auto 60px auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 764px;
+  justify-content: space-between;
+}
+
+.friends__item {
+  position: relative;
+  color: var(--outer-space);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  padding-top: 198px;
+  width: 168px;
+  text-align: left;
+}
+
+.friends__item::before {
+  position: absolute;
+  content: "";
+  width: 168px;
+  height: 168px;
+  top: 0;
+  left: 0;
+  background-color: var(--basic--white);
+  border-radius: 5px;
+  border: 1px solid var(--coral);
+}
+
+.friends__item--card::before {
+  background-image: url("../../icons/card-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.friends__item--payment::before {
+  background-image: url("../../icons/zoo-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.friends__item--dish::before {
+  background-image: url("../../icons/monkey-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.friends__button {
+  margin: 0 auto;
+}
+
+.friends__item:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 36px;
+  background-image: url("../../icons/payment-arrow-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 62px;
+  right: -100px;
+}
