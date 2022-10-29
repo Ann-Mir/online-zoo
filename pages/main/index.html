@@ -280,8 +280,51 @@
     </div>
   </section>
 </main>
-<footer>
-
+<footer class="footer">
+  <div class="footer_wrapper">
+    <a class="footer__logo"><img src="../../assets/images/logo.svg" width="82" height="52"></a>
+    <form class="footer_subscription-form subscription-form" method="post" action="#">
+      <p class="subscription-form__title">Subscribe to our news</p>
+      <div class="subscription-form__wrapper">
+        <label class="visually-hidden" for="email"> Enter you e-mail</label>
+        <input class="subscription-form__input" type="email" placeholder="Enter your email" id="email">
+        <button class="subscription-form__submit-button submit-button submit-button--error" type="submit">Submit</button>
+      </div>
+    </form>
+    <a class="button" href="../donate/donate.html">Donate for volunteers</a>
+    <ul class="footer__social-list social-list">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--facebook" href="https://facebook.com">Facebook</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--twitter" href="https://twitter.com/">Twitter</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/">Instagram</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/">YouTube</a>
+      </li>
+    </ul>
+    <ul class="nav__list nav__list--footer">
+      <li class="nav__item">
+        <a class="nav__link nav__link--active" href="index.html">About</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Map</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Zoos</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Contact us</a>
+      </li>
+    </ul>
+    <div class="footer__copyright">
+      <a class="footer__design" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by Alisa Samborskaya</a>
+      <a class="footer__course" href="https://rs.school/js/">&#169;RSSchool & &#169;Yem Digital 2021</a>
+    </div>
+  </div>
 </footer>
 </body>
 </html>

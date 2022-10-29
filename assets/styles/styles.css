@@ -11,3 +11,8 @@
 
 @import url(blocks/main.css);
 @import url(blocks/button.css);
+
+@import url(blocks/footer.css);
+@import url(../../assets/styles/blocks/subscription-form.css);
+@import url(../../assets/styles/blocks/submit-button.css);
+@import url(../../assets/styles/blocks/social-list.css);
