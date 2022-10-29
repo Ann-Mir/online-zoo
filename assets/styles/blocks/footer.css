@@ -60,6 +60,15 @@
   color: var(--basic--white);
 }
 
+.footer__copyright a:hover {
+  text-decoration: underline;
+}
+
+.footer__copyright a:active {
+  text-decoration-color: var(--limeade);
+  color: var(--limeade);
+}
+
 .footer__nav {
   grid-area: nav;
   margin-top: 30px;

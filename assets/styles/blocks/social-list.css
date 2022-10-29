@@ -53,3 +53,19 @@
 .social-list__link--youtube::before {
   background-image: url("../../icons/youtube-icon.svg");
 }
+
+.social-list__link:hover {
+  opacity: 0.5;
+}
+
+.social-list__link:active::before {
+  text-decoration: underline;
+  background-color: var(--limeade);
+  opacity: 1;
+}
+
+.social-list__link:active {
+  text-decoration: none;
+  color: var(--limeade);
+  opacity: 1;
+}

@@ -28,7 +28,7 @@
 
 .animal-card__bottom {
   min-height: 59px;
-  padding: 8px 8px 14px 16px;
+  padding: 8px 8px 11px 16px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
