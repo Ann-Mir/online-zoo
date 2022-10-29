@@ -17,6 +17,7 @@
 }
 
 .friends__title {
+  margin-top: 0;
   margin-bottom: 30px;
   text-align: center;
   color: var(--west-side);
