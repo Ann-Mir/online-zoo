@@ -56,3 +56,35 @@
   line-height: 1.2;
   margin: 0;
 }
+
+.animal-card:hover {
+  position: relative;
+  transform: scale(107%);
+  border: none;
+}
+
+.animal-card__bottom {
+  position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.animal-card:hover .animal-card__bottom {
+  top: -58px;
+  z-index: 1;
+  background-color: var(--basic-black);
+  opacity: 0.7;
+  width: 365px;
+}
+
+.animal-card:hover .animal-card__title {
+  z-index: 2;
+  color: var(--basic--white);
+  opacity: 1;
+}
+
+.animal-card:hover .animal-card__text {
+  z-index: 2;
+  color: var(--basic--white);
+  opacity: 1;
+}
