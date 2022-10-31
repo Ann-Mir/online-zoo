@@ -1,10 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="preload"
+      href="../../assets/fonts/roboto-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="styles.css">
+  <title>PetStory Online</title>
 </head>
-<body>
-
+<body class="body">
+<header class="header">
+  <div class="header__wrapper">
+    <a class="header__logo" href="index.html">
+      <h1 class="visually-hidden">PetStory Online</h1>
+      <img src="../../assets/images/logo.svg" width="82" height="52" alt="Pet Story Online logo.">
+    </a>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link nav__link--active" href="index.html">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Map</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Zoos</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../donate/donate.html">Donate</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="header__design" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" target="_blank">Designed by &copy;</a>
+  </div>
+</header>
+<main class="main">
+</main>
+<footer class="footer">
+  <div class="footer_wrapper">
+    <a class="footer__logo" href="index.html"><img src="../../assets/images/logo.svg" alt="Pet Story Online logo." width="82" height="52"></a>
+    <form class="footer_subscription-form subscription-form" method="post" action="#">
+      <p class="subscription-form__title">Subscribe to our news</p>
+      <div class="subscription-form__wrapper">
+        <label class="visually-hidden" for="email"> Enter you e-mail</label>
+        <input class="subscription-form__input" type="email" placeholder="Enter your email" id="email" required>
+        <button class="subscription-form__submit-button submit-button submit-button--error" type="submit">Submit</button>
+      </div>
+    </form>
+    <a class="footer__donate button" href="../donate/donate.html">Donate for volunteers</a>
+    <ul class="footer__social-list social-list">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--facebook" href="https://facebook.com">Facebook</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--twitter" href="https://twitter.com/">Twitter</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/">Instagram</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/">YouTube</a>
+      </li>
+    </ul>
+    <ul class="footer__nav nav__list nav__list--footer">
+      <li class="nav__item">
+        <a class="nav__link nav__link--active" href="index.html">About</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Map</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Zoos</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Contact us</a>
+      </li>
+    </ul>
+    <div class="footer__copyright">
+      <a class="footer__design" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by Alisa Samborskaya</a>
+      <a class="footer__course" href="https://rs.school/js/">&#169;RSSchool & &#169;Yem Digital 2021</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
