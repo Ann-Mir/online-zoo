@@ -13,7 +13,7 @@
   flex-direction: row;
 }
 
-.subscription-form__input {
+.subscription-form__input, .subscription-form__input:valid{
   padding: 10px;
   width: 228px;
   height: 42px;
@@ -29,8 +29,8 @@
   border-color: var(--limeade);
 }
 
-.subscription-form__input:invalid {
-  border-color: var(--red);
+.subscription-form__input:invalid:not(:placeholder-shown), .subscription-form__input:invalid:focus-within {
+  border-color: crimson;
 }
 
 .subscription-form__input::placeholder {
@@ -44,4 +44,11 @@
 .subscription-form__submit-button {
   width: 129px;
   height: 42px;
+}
+
+.subscription-form__input:valid + .subscription-form__submit-button {
+  color: var(--basic-black);
+  border-radius: 5px;
+  border: 1px solid var(--outer-space);
+  outline: none;
 }
