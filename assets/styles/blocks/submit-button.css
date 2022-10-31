@@ -1,0 +1,26 @@
+.submit-button {
+  background-color: var(--haze);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--basic-black);
+  border-radius: 5px;
+  border: 1px solid var(--outer-space);
+  outline: none;
+}
+
+.submit-button--error {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.submit-button:hover {
+  opacity: 0.7;
+}
+
+.submit-button:active {
+  border-color: var(--limeade);
+  color: var(--limeade);
+  opacity: 1;
+}
