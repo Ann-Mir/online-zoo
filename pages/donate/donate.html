@@ -66,10 +66,91 @@
             <img class="pick-friend____number" src="../../assets/icons/four-icon.svg" width="82" height="58" alt="Four.">
             <span>Panda diet for the day</span>
           </p>
+          <form class="donation__form donation-form" action="#" method="post">
+            <div class="donation-form__inputs-wrapper">
+              <p class="donation-form__title">Amount</p>
+              <div class="donation-form__progress-bar">
+                <div class="donation-form__progress-bar-wrapper">
+                  <div class="progress-bar__input-item">
+                    <label class="progress-bar__label-wrapper" for="5000">
+                      <input class="progress-bar__input visually-hidden" type="radio" id="5000" name="amount" value="5000">
+                      <span class="progress-bar__control-mark"></span>
+                      <span class="progress-bar__label">$5000</span>
+                    </label>
+                  </div>
+                  <div class="progress-bar__input-item">
+                    <label class="progress-bar__label-wrapper" for="2000">
+                      <input class="progress-bar__input visually-hidden" type="radio" id="2000" name="amount" value="2000">
+                      <span class="progress-bar__control-mark"></span>
+                      <span class="progress-bar__label">$2000</span>
+                    </label>
+                  </div>
+                  <div class="progress-bar__input-item">
+                    <label class="progress-bar__label-wrapper" for="1000">
+                      <input class="progress-bar__input visually-hidden" type="radio" id="1000" name="amount" value="1000">
+                      <span class="progress-bar__control-mark"></span>
+                      <span class="progress-bar__label">$1000</span>
+                    </label>
+                  </div>
+                  <div class="progress-bar__input-item">
+                    <label class="progress-bar__label-wrapper" for="500">
+                      <input class="progress-bar__input visually-hidden" type="radio" id="500" name="amount" value="500">
+                      <span class="progress-bar__control-mark"></span>
+                      <span class="progress-bar__label">$500</span>
+                    </label>
+                  </div>
+                  <div class="progress-bar__input-item">
+                    <label class="progress-bar__label-wrapper" for="250">
+                      <input class="progress-bar__input visually-hidden" type="radio" id="250" name="amount" value="250">
+                      <span class="progress-bar__control-mark"></span>
+                      <span class="progress-bar__label">$250</span>
+                    </label>
+                  </div>
+                  <div class="progress-bar__input-item">
+                    <label class="progress-bar__label-wrapper" for="100">
+                      <input class="progress-bar__input visually-hidden" type="radio" id="100" name="amount" value="100">
+                      <span class="progress-bar__control-mark"></span>
+                      <span class="progress-bar__label">$100</span>
+                    </label>
+                  </div>
+                  <div class="progress-bar__input-item">
+                    <label class="progress-bar__label-wrapper" for="50">
+                      <input class="progress-bar__input visually-hidden" type="radio" id="50" name="amount" value="50">
+                      <span class="progress-bar__control-mark"></span>
+                      <span class="progress-bar__label">$50</span>
+                    </label>
+                  </div>
+                  <div class="progress-bar__input-item">
+                    <label class="progress-bar__label-wrapper" for="25">
+                      <input class="progress-bar__input visually-hidden" type="radio" id="25" name="amount" value="25">
+                      <span class="progress-bar__control-mark"></span>
+                      <span class="progress-bar__label">$25</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label for="amount"></label>
+              <input id="amount" type="number" placeholder="Another amount" min="0" max="9999" step="1">
+            </div>
+            <div>
+              <p class="visually-hidden">Subscription period</p>
+              <div>
+                <label for="monthly"></label>
+                <input type="radio" id="monthly" name="period" value="Monthly">
+              </div>
+              <div>
+                <label for="once"></label>
+                <input type="radio" id="once" name="period" value="Once">
+              </div>
+            </div>
+            <button class="button button--rounded" type="submit">Feed a friend now</button>
+          </form>
+          <p>Share with your friends on social networks</p>
         </div>
       </div>
     </div>
-  
   </section>
 </main>
 <footer class="footer">
