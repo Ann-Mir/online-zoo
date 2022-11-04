@@ -8,24 +8,18 @@
 }
 
 .donation-form__inputs-wrapper {
-  margin-bottom: 50px;
+  padding-bottom: 110px;
 }
 
 .donation-form__progress-bar {
   width: 100%;
   max-width: 976px;
-  /*height: 27px;*/
   margin-right: -7px;
   margin-left: 7px;
   position: relative;
 }
 
 .donation-form__progress-bar-wrapper {
-  /*padding-right: 6px;*/
-  /*padding-left: 15px;*/
-  /*margin-right: -7px;*/
-  /*margin-left: 7px;*/
-  /*position: relative;*/
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -48,19 +42,6 @@
   z-index: 0;
 }
 
-/*.donation-form__progress-bar:before {*/
-/*  position: absolute;*/
-/*  content: "";*/
-/*  width: 94%;*/
-/*  height: 2px;*/
-/*  border-radius: 2px;*/
-/*  background-color: var(--slate-grey);*/
-/*  !*margin-right: 3.5%;*!*/
-/*  margin-left: 3%;*/
-/*  z-index: 1;*/
-/*  top: 12px;*/
-/*}*/
-
 .donation-form__progress-bar-wrapper:after {
   position: absolute;
   content: "";
@@ -75,64 +56,4 @@
   z-index: 1;
   top: 19px;
   background-clip: content-box;
-}
-
-.progress-bar__input-item {
-  z-index: 2;
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-/*.progress-bar__input {*/
-/*  appearance: none;*/
-/*  background-color: var(--golden-fizz);*/
-/*  margin: 0;*/
-/*  font: inherit;*/
-/*  color: currentColor;*/
-/*  width: 10px;*/
-/*  height: 10px;*/
-/*  !*border: 0.15em solid currentColor;*!*/
-/*  border-radius: 50%;*/
-/*  !*transform: translateY(-0.075em);*!*/
-/*}*/
-.progress-bar__label-wrapper {
-  cursor: pointer;
-  display: block;
-  /*padding-top: 45px;*/
-}
-
-.progress-bar__control-mark {
-  position: relative;
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  padding: 15px;
-  background-color: var(--golden-fizz);
-  background-clip: content-box;
-  /*place-content: center;*/
-}
-
-.progress-bar__input[type="radio"]:checked+.progress-bar__control-mark::before {
-  position: absolute;
-  top: 9px;
-  left: 9px;
-  content: "";
-  width: 23px;
-  height: 23px;
-  display: block;
-  border-radius: 50%;
-  border: 2px solid var(--west-side);
-}
-
-.progress-bar__input[type="radio"]:checked+.progress-bar__control-mark::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  width: 40px;
-  height: 40px;
-  display: block;
-  border-radius: 50%;
-  border: 2px solid var(--west-side);
 }

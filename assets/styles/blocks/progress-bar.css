@@ -1,0 +1,69 @@
+.progress-bar__input-item {
+  z-index: 2;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.progress-bar__label-wrapper {
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+.progress-bar__control-mark {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 15px;
+  background-color: var(--golden-fizz);
+  background-clip: content-box;
+}
+
+.progress-bar__input[type="radio"]:hover+.progress-bar__control-mark::before,
+.progress-bar__input[type="radio"]:checked+.progress-bar__control-mark::before {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  content: "";
+  width: 23px;
+  height: 23px;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid var(--west-side);
+}
+
+.progress-bar__input[type="radio"]:hover+.progress-bar__control-mark::after,
+.progress-bar__input[type="radio"]:checked+.progress-bar__control-mark::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid var(--west-side);
+}
+
+.progress-bar__label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--outer-space);
+  display: block;
+  position: absolute;
+  top: 112%;
+  left: -23%;
+}
+
+.progress-bar__label span {
+  font-size: 22px;
+}
+
+.progress-bar__input[type="radio"]:checked~.progress-bar__label {
+  color: var(--west-side);
+}
