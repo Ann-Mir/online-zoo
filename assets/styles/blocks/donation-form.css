@@ -57,3 +57,124 @@
   top: 19px;
   background-clip: content-box;
 }
+
+.donation-form__amount-input::-webkit-outer-spin-button,
+.donation-form__amount-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.donation-form__amount-input {
+  display: block;
+  outline: none;
+  padding: 16px 17px 16px 9px;
+  background: transparent;
+  width: 268px;
+  height: 54px;
+  border: 1px solid var(--oslo-grey);
+  border-radius: 2px;
+  -moz-appearance: textfield;
+  margin-top: 14px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.donation-form__amount-input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--oslo-grey);
+}
+
+.donation-form__amount-input:focus-within {
+  border: 1px solid var(--limeade);
+}
+
+.donation-form__amount-input:invalid {
+  border: 1px solid var(--red);
+}
+
+.donation-form__amount-wrapper {
+  position: relative;
+  width: 268px;
+  margin: 0 auto 25px auto;
+}
+
+.donation-form__dollar {
+  position: absolute;
+  fill: var(--oslo-grey);
+  top: 16px;
+  right: 8px;
+}
+
+.donation-form__dollar path {
+  fill: var(--oslo-grey);
+}
+
+
+.donation-form__amount-input:focus-within + .donation-form__dollar path {
+  fill: var(--limeade);
+}
+
+.donation-form__amount-input:invalid + .donation-form__dollar path {
+  fill: var(--red);
+}
+
+.donation-form__bottom-wrapper {
+  width: 298px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.donation-form__subscription-period {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 31px;
+}
+
+.donation-form__subscription-period label {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--outer-space);
+  margin-left: 10px;
+}
+
+.donation-form__subscription-period input {
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  font: inherit;
+  color: var(--west-side);
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--west-side);
+  border-radius: 50%;
+  transform: translateY(-1px);
+}
+
+.donation-form__subscription-period input:hover {
+  border: 1px solid var(--limeade);
+}
+
+.donation-form__subscription-period input:checked::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--limeade);
+  border: 1px solid var(--limeade);
+  color: var(--limeade);
+}
+
+.donation-form__subscription-input-wrapper {
+  display: flex;
+  align-items: center;
+}

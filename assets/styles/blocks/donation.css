@@ -55,3 +55,18 @@
   margin-top: 0;
   margin-bottom: 60px;
 }
+
+.donation__form {
+  margin-bottom: 30px;
+}
+
+.donation__slogan {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--outer-space);
+  text-align: center;
+}
