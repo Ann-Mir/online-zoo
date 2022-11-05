@@ -20,12 +20,30 @@
 .pets__button {
   margin: 0 auto;
 }
-.pets_nav-button, .pets_nav-button:hover, .pets_nav-button:active {
+.pets_nav-button {
   background-image: url("../../icons/arrow-icon.svg"), linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   position: absolute;
   top: 402px;
+}
+
+.pets_nav-button:hover {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 402px;
+  background-color: var(--christine);
+  background-image: url("../../icons/arrow-icon.svg"); !important;
+}
+
+.pets_nav-button:active {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 402px;
+  background-color: var(--limeade);
+  background-image: url("../../icons/arrow-icon.svg"); !important;
 }
 
 .pets_nav-button--left {

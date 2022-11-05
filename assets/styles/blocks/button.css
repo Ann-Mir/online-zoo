@@ -21,6 +21,7 @@
 }
 
 .button--small {
+  cursor: pointer;
   width: 62px;
   height: 62px;
   border-radius: 50%;

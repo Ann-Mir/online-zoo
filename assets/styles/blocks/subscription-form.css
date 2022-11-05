@@ -13,7 +13,7 @@
   flex-direction: row;
 }
 
-.subscription-form__input, .subscription-form__input:valid{
+.subscription-form__input {
   padding: 10px;
   width: 228px;
   height: 42px;
@@ -25,11 +25,11 @@
   color: var(--basic--white);
 }
 
-.subscription-form__input:focus {
+.subscription-form__input:focus:placeholder-shown, .subscription-form__input:valid {
   border-color: var(--limeade);
 }
 
-.subscription-form__input:invalid:not(:placeholder-shown), .subscription-form__input:invalid:focus-within {
+.subscription-form__input:focus:invalid {
   border-color: crimson;
 }
 
