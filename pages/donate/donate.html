@@ -1,10 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="preload"
+      href="../../assets/fonts/roboto-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="styles.css">
+  <title>PetStory Online</title>
 </head>
-<body>
-
+<body class="body">
+<header class="header">
+  <div class="header__wrapper">
+    <a class="header__logo" href="../main/index.html">
+      <h1 class="visually-hidden">PetStory Online</h1>
+      <img src="../../assets/images/logo.svg" width="82" height="52" alt="Pet Story Online logo.">
+    </a>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="../main/index.html">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Map</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Zoos</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--active">Donate</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="header__design" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" target="_blank">Designed by &copy;</a>
+  </div>
+</header>
+<main class="main">
+  <section class="donation">
+    <div class="donation__promo">
+    </div>
+    <div class="donation__wrapper">
+      <div class="donation__inner-wrapper">
+        <p class="donation__title">The zoo has officially reopened but we still need your help!</p>
+        <p class="donation__description">
+          Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs
+          and public and private events cancelled or postponed&nbsp;for&nbsp;additional&nbsp;months. We need you now
+          more than ever to help ensure that we overcome these challenges. We have been actively raising funds in
+          the community,&nbsp;and&nbsp;we
+          are&nbsp;grateful for the generosity.  But much more support is still needed, and we need your help! Please
+          consider a gift today – no matter what size&nbsp;–&nbsp;to&nbsp;help us sustain our mission.
+        </p>
+        <h2 class="donation__subtitle">Donation Information</h2>
+        <div class="donation__pick pick-friend">
+          <h3 class="pick-friend__title">Pick and feed a friend</h3>
+          <p class="pick-friend__description">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
+          <p class="pick-friend__diet">
+            <img class="pick-friend____number" src="../../assets/icons/four-icon.svg" width="82" height="58" alt="Four.">
+            <span>Panda diet for the day</span>
+          </p>
+          <form class="donation__form donation-form" action="#" method="post">
+            <div class="donation-form__inputs-wrapper">
+              <p class="donation-form__title">Amount</p>
+              <div class="donation-form__progress-bar">
+                <div class="donation-form__progress-bar-wrapper">
+                  <div class="progress-bar__input-item">
+                    <label class="progress-bar__label-wrapper" for="5000">
+                      <input class="progress-bar__input visually-hidden" type="radio" id="5000" name="amount" value="5000">
+                      <span class="progress-bar__control-mark"></span>
+                      <span class="progress-bar__label"><span>$</span>5000</span>
+                    </label>
+                  </div>
+                  <div class="progress-bar__input-item">
+                    <label class="progress-bar__label-wrapper" for="2000">
+                      <input class="progress-bar__input visually-hidden" type="radio" id="2000" name="amount" value="2000">
+                      <span class="progress-bar__control-mark"></span>
+                      <span class="progress-bar__label"><span>$</span>2000</span>
+                    </label>
+                  </div>
+                  <div class="progress-bar__input-item">
+                    <label class="progress-bar__label-wrapper" for="1000">
+                      <input class="progress-bar__input visually-hidden" type="radio" id="1000" name="amount" value="1000">
+                      <span class="progress-bar__control-mark"></span>
+                      <span class="progress-bar__label"><span>$</span>1000</span>
+                    </label>
+                  </div>
+                  <div class="progress-bar__input-item">
+                    <label class="progress-bar__label-wrapper" for="500">
+                      <input class="progress-bar__input visually-hidden" type="radio" id="500" name="amount" value="500">
+                      <span class="progress-bar__control-mark"></span>
+                      <span class="progress-bar__label"><span>$</span>500</span>
+                    </label>
+                  </div>
+                  <div class="progress-bar__input-item">
+                    <label class="progress-bar__label-wrapper" for="250">
+                      <input class="progress-bar__input visually-hidden" type="radio" id="250" name="amount" value="250">
+                      <span class="progress-bar__control-mark"></span>
+                      <span class="progress-bar__label"><span>$</span>250</span>
+                    </label>
+                  </div>
+                  <div class="progress-bar__input-item">
+                    <label class="progress-bar__label-wrapper" for="100">
+                      <input class="progress-bar__input visually-hidden" type="radio" id="100" name="amount" value="100" checked>
+                      <span class="progress-bar__control-mark"></span>
+                      <span class="progress-bar__label"><span>$</span>100</span>
+                    </label>
+                  </div>
+                  <div class="progress-bar__input-item">
+                    <label class="progress-bar__label-wrapper" for="50">
+                      <input class="progress-bar__input visually-hidden" type="radio" id="50" name="amount" value="50">
+                      <span class="progress-bar__control-mark"></span>
+                      <span class="progress-bar__label"><span>$</span>50</span>
+                    </label>
+                  </div>
+                  <div class="progress-bar__input-item">
+                    <label class="progress-bar__label-wrapper" for="25">
+                      <input class="progress-bar__input visually-hidden" type="radio" id="25" name="amount" value="25">
+                      <span class="progress-bar__control-mark"></span>
+                      <span class="progress-bar__label"><span>$</span>25</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="donation-form__bottom-wrapper">
+              <div class="donation-form__amount-wrapper">
+                <label class="visually-hidden" for="amount">Enter amount:</label>
+                <input class="donation-form__amount-input" id="amount" type="number" placeholder="Another amount" min="0" max="9999" step="1">
+                <svg class="donation-form__dollar" width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.07792 6.25974C7.66234 5.87013 7.24675 5.58442 6.85714 5.37662C6.46753 5.19481 6.02597 5.09091 5.53247 5.09091C4.96104 5.09091 4.54545 5.22078 4.25974 5.45455C3.97403 5.68831 3.81818 6.07792 3.81818 6.5974C3.81818 6.96104 3.97403 7.2987 4.28571 7.53247C4.5974 7.79221 4.96104 8.02597 5.42857 8.25974C5.8961 8.49351 6.38961 8.72727 6.90909 8.98701C7.42857 9.24675 7.92208 9.53247 8.38961 9.8961C8.85714 10.2597 9.22078 10.6753 9.53247 11.1948C9.84416 11.7143 10 12.3377 10 13.0649C10 14.1818 9.68831 15.1429 9.09091 15.9481C8.49351 16.7532 7.55844 17.2727 6.36364 17.5584V20H4.1039V17.6623C3.42857 17.5844 2.7013 17.4026 1.94805 17.0909C1.19481 16.7792 0.545455 16.3896 0 15.8961L1.50649 13.5844C2.1039 14.026 2.67532 14.3636 3.19481 14.5974C3.74026 14.8312 4.28571 14.9351 4.83117 14.9351C5.48052 14.9351 5.97403 14.8052 6.25974 14.5455C6.57143 14.2857 6.72727 13.8701 6.72727 13.3247C6.72727 12.9091 6.57143 12.5714 6.25974 12.2857C5.94805 12 5.58442 11.7403 5.11688 11.4805C4.64935 11.2208 4.15584 10.961 3.63636 10.7013C3.11688 10.4416 2.62338 10.1299 2.15584 9.76623C1.68831 9.4026 1.32468 8.98701 1.01299 8.49351C0.701299 8 0.545455 7.42857 0.545455 6.72727C0.545455 5.58442 0.857143 4.62338 1.48052 3.87013C2.1039 3.11688 2.98701 2.62338 4.07792 2.41558V0H6.33766V2.36364C7.09091 2.46753 7.74026 2.7013 8.31169 3.03896C8.88312 3.37662 9.37662 3.79221 9.84416 4.28571L8.07792 6.25974Z" fill="#4B9200"/>
+                </svg>
+              </div>
+              <div class="donation-form__subscription-period">
+                <p class="visually-hidden">Subscription period</p>
+                <div class="donation-form__subscription-input-wrapper">
+                  <input type="radio" id="monthly" name="period" value="Monthly">
+                  <label for="monthly">Monthly</label>
+                </div>
+                <div class="donation-form__subscription-input-wrapper">
+                  <input type="radio" id="once" name="period" value="Once" checked>
+                  <label for="once">Once</label>
+                </div>
+              </div>
+              <button class="button button--rounded" type="submit">Feed a friend now</button>
+            </div>
+          </form>
+          <p class="donation__slogan">Share with your friends on social networks</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer_wrapper">
+    <a class="footer__logo" href="../main/index.html"><img src="../../assets/images/logo.svg" alt="Pet Story Online logo." width="82" height="52"></a>
+    <form class="footer_subscription-form subscription-form" method="post" action="#">
+      <p class="subscription-form__title">Subscribe to our news</p>
+      <div class="subscription-form__wrapper">
+        <label class="visually-hidden" for="email"> Enter you e-mail</label>
+        <input class="subscription-form__input" type="email" placeholder="Enter your email" id="email" required>
+        <button class="subscription-form__submit-button submit-button submit-button--error" type="submit">Submit</button>
+      </div>
+    </form>
+    <a class="footer__donate button" href="../donate/donate.html">Donate for volunteers</a>
+    <ul class="footer__social-list social-list">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--facebook" href="https://facebook.com">Facebook</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--twitter" href="https://twitter.com/">Twitter</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/">Instagram</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/">YouTube</a>
+      </li>
+    </ul>
+    <ul class="footer__nav nav__list nav__list--footer">
+      <li class="nav__item">
+        <a class="nav__link" href="../main/index.html">About</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Map</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Zoos</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Contact us</a>
+      </li>
+    </ul>
+    <div class="footer__copyright">
+      <a class="footer__design" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by Alisa Samborskaya</a>
+      <a class="footer__course" href="https://rs.school/js/">&#169;RSSchool & &#169;Yem Digital 2021</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

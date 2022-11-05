@@ -1,0 +1,65 @@
+.pick-friend {
+  background: rgba(255, 255, 255, 0.52);
+  padding: 37px 92px 62px 85px;
+  border-radius: 20px;
+  min-height: 964px;
+}
+
+.pick-friend__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--west-side);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.pick-friend__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--outer-space);
+  margin-bottom: 107px;
+  margin-top: 0;
+  margin-left: 9px;
+}
+
+.pick-friend__diet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 532px;
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--outer-space);
+  padding-top: 58px;
+  padding-right: 373px;
+  padding-bottom: 60px;
+  margin: 0 auto 40px auto;
+  background-image: url("../../icons/panda-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 284px 246px;
+  background-position: right -45px;
+}
+
+.pick-friend____number {
+  display: flex;
+  margin-bottom: 11px;
+}
+
+.pick-friend__diet:before {
+  position: absolute;
+  content: "";
+  background-image: url("../../icons/x-icon.svg");
+  width: 14px;
+  height: 14px;
+  top: 82px;
+  left: 169px;
+  background-repeat: no-repeat;
+}
